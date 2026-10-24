@@ -1,0 +1,471 @@
+/* ============================================================
+   COLORES Y BASE GENERAL
+   ============================================================ */
+
+/* Colores de la aplicación en variables para reutilizarlos. */
+:root {
+  --fondo: #f5f7f8;
+  --texto: #182f38;
+  --suave: #62757d;
+  --borde: #dfe6e9;
+  --verde: #087a68;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font: 15px/1.6 system-ui,Segoe UI,sans-serif;
+}
+
+/* ============================================================
+   CABECERA E INTRODUCCIÓN
+   ============================================================ */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px max(30px,calc((100vw - 1370px)/2));
+  background: white;
+  border-bottom: 1px solid var(--borde);
+}
+
+.marca {
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--verde);
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.marca span {
+  font-size: 16px;
+  color: var(--texto);
+  font-weight: 650;
+}
+
+main {
+  max-width: 1430px;
+  margin: auto;
+  padding: 34px 30px;
+}
+
+.intro {
+  max-width: 740px;
+}
+
+.sobretitulo {
+  font-size: 11px;
+  letter-spacing: .16em;
+  font-weight: 750;
+  color: var(--verde);
+}
+
+h1 {
+  font-size: 43px;
+  line-height: 1.14;
+  letter-spacing: -.04em;
+  margin: 10px 0 17px;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 1.35;
+  margin: 0 0 9px;
+}
+
+.intro>p:last-child {
+  font-size: 17px;
+  color: var(--suave);
+}
+
+.aviso {
+  border-left: 3px solid #bd9c4f;
+  background: #fffaf0;
+  padding: 13px 18px;
+  margin: 26px 0;
+  color: #79602b;
+  font-size: 13px;
+}
+
+/* ============================================================
+   PESTAÑAS Y BOTONES
+   ============================================================ */
+
+nav {
+  display: flex;
+  gap: 27px;
+  border-bottom: 1px solid var(--borde);
+  margin-bottom: 26px;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid var(--borde);
+  border-radius: 7px;
+  background: white;
+  color: var(--texto);
+  padding: 8px 13px;
+  font: inherit;
+  font-size: 13px;
+}
+
+nav button {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 13px 0;
+  font-weight: 650;
+  color: var(--suave);
+}
+
+nav button.activo {
+  border-bottom: 3px solid var(--verde);
+  color: var(--verde);
+}
+
+button:hover {
+  filter: brightness(.96);
+}
+
+button:disabled {
+  opacity: .45;
+  cursor: default;
+}
+
+/* ============================================================
+   PANELES Y DISTRIBUCIÓN
+   ============================================================ */
+
+/* Solo se muestra el panel de la pestaña activa. */
+.panel {
+  display: none;
+}
+
+.panel.activo {
+  display: block;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 330px 1fr;
+  gap: 25px;
+  align-items: start;
+}
+
+.tarjeta {
+  background: white;
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  padding: 23px;
+  margin-bottom: 23px;
+}
+
+.suave {
+  font-size: 12px;
+  color: var(--suave);
+  margin: 4px 0 18px;
+}
+
+/* ============================================================
+   FORMULARIO DE CONFIGURACIÓN
+   ============================================================ */
+
+label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 12px 0;
+  color: #46606b;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced9de;
+  border-radius: 7px;
+  color: var(--texto);
+  font: inherit;
+  margin-top: 6px;
+  background: #fff;
+}
+
+input:focus {
+  outline: 2px solid #75b9ad;
+  outline-offset: 1px;
+}
+
+.dos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 13px;
+}
+
+.primario {
+  background: var(--verde);
+  color: white;
+  border: 0;
+  padding: 13px 18px;
+  font-weight: 650;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 19px;
+}
+
+.secundario {
+  width: 100%;
+  margin-top: 10px;
+  color: var(--suave);
+}
+
+details {
+  border-top: 1px solid var(--borde);
+  margin: 15px 0;
+  padding-top: 13px;
+}
+
+summary {
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#estado {
+  font-size: 12px;
+  margin-bottom: 0;
+  overflow-wrap: anywhere;
+}
+
+.error {
+  color: #b23232;
+}
+
+/* ============================================================
+   MÉTRICAS DE RESULTADOS
+   ============================================================ */
+
+.metricas {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 14px;
+  margin-bottom: 23px;
+}
+
+.metricas article {
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  padding: 18px;
+  background: white;
+}
+
+.metricas span, .metricas small {
+  display: block;
+  font-size: 11px;
+  color: var(--suave);
+}
+
+.metricas strong {
+  display: block;
+  font-size: 25px;
+  letter-spacing: -.04em;
+  margin: 5px 0;
+  color: var(--verde);
+}
+
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.etiqueta {
+  font-size: 11px;
+  background: #eaf2f0;
+  color: #43756b;
+  border-radius: 5px;
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+
+/* ============================================================
+   GRÁFICO DE CONVERGENCIA
+   ============================================================ */
+
+.grafico {
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--suave);
+  font-size: 13px;
+}
+
+.grafico svg {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+}
+
+.leyenda {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  justify-content: center;
+  font-size: 11px;
+  color: var(--suave);
+}
+
+.linea {
+  width: 20px;
+  height: 3px;
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.mejor {
+  background: var(--verde);
+}
+
+.promedio {
+  background: #b3c4cc;
+}
+
+/* ============================================================
+   PLAN DE VIAJES
+   ============================================================ */
+
+/* Barra de carga: muestra qué tan lleno va el camión en cada viaje. */
+.viaje {
+  padding: 15px 0;
+  border-top: 1px solid var(--borde);
+}
+
+.viaje strong {
+  font-size: 13px;
+}
+
+.viaje p {
+  font-size: 12px;
+  color: var(--suave);
+  margin: 7px 0;
+}
+
+.carga {
+  height: 4px;
+  background: #e6efed;
+  border-radius: 5px;
+  margin: 8px 0;
+}
+
+.carga span {
+  display: block;
+  background: var(--verde);
+  height: 4px;
+  border-radius: 5px;
+}
+
+/* ============================================================
+   TABLAS DE DATOS Y FLOTA
+   ============================================================ */
+
+.tabla {
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  text-align: left;
+}
+
+th {
+  color: var(--suave);
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+td, th {
+  padding: 12px 9px;
+  border-bottom: 1px solid var(--borde);
+}
+
+/* ============================================================
+   PESTAÑA MÉTODO Y PIE DE PÁGINA
+   ============================================================ */
+
+.lectura {
+  max-width: 980px;
+}
+
+.lectura h2 {
+  margin-top: 25px;
+}
+
+.lectura h2:first-child {
+  margin-top: 0;
+}
+
+a {
+  color: var(--verde);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 11px;
+  color: var(--suave);
+  border-top: 1px solid var(--borde);
+}
+
+/* ============================================================
+   DISEÑO ADAPTABLE (TABLETS Y CELULARES)
+   ============================================================ */
+
+/* En pantallas angostas las columnas pasan a una sola. */
+@media (max-width: 950px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .metricas strong {
+    font-size: 21px;
+  }
+  aside.tarjeta {
+    max-width: none;
+  }
+  h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 550px) {
+  main {
+    padding: 25px 15px;
+  }
+  .metricas {
+    grid-template-columns: 1fr;
+  }
+  .cabecera {
+    display: block;
+  }
+  header {
+    padding: 18px 15px;
+  }
+  .etiqueta {
+    white-space: normal;
+  }
+  .marca span {
+    display: none;
+  }
+  .tarjeta {
+    padding: 18px;
+  }
+}

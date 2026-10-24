@@ -1,0 +1,22 @@
+{
+  "archivo_original": "15_mercados_chiclayo_11_columnas.csv",
+  "sha256_csv": "45fa525ca03eb500b17d78740de1ba5bcfffa70ae1ee847d2ad58e90bbc266cc",
+  "filas": 15,
+  "columnas": 11,
+  "demanda_total_kg": "41904.36",
+  "tasa_referencia_kg_por_puesto": "5.154921853578283520701946806",
+  "verificado": [
+    "IDs unicos",
+    "Conversion kg/t",
+    "Formula por puestos",
+    "15 coordenadas iguales a consulta OSRM",
+    "Matriz 17x17 completa"
+  ],
+  "supuestos": [
+    "Demanda uniforme por puesto desde estimacion Moshoqueque 2023",
+    "2 camiones academicos de 10000 kg, hasta 3 viajes por camion",
+    "Cada viaje parte y regresa a base tras descargar",
+    "Puertas de base y botadero pendientes de validacion"
+  ],
+  "sha256_osrm": "ea354709e3012cca90597f3ac1bdd9bab9e1a82595a41c4c764cfca51cd47d85"
+}
