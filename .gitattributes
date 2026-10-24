@@ -1,0 +1,2 @@
+# Keep data files byte-for-byte (their SHA-256 fingerprints are checked by the tests)
+datos/** -text
