@@ -123,7 +123,11 @@ class SistemaTest(unittest.TestCase):
         guardado = json.loads((ROOT / 'resultados/semilla_42.json').read_text(encoding='utf-8'))
         r = motor.optimizar(self.d, self.c)
         self.assertEqual(r['solucion']['orden'], guardado['solucion']['orden'])
-        self.assertEqual(r['historial'], guardado['historial'])
+        self.assertEqual(len(r['historial']), len(guardado['historial']))
+        # Python 3.12+ suma floats con más precisión: los promedios pueden variar en el último decimal.
+        for a, b in zip(r['historial'], guardado['historial']):
+            for k in a:
+                self.assertAlmostEqual(a[k], b[k], places=6)
 
     def test_hibrido_reproducible_y_no_peor(self):
         c = self.c | {'prob_busqueda_local': 0.02, 'generaciones': 60}
