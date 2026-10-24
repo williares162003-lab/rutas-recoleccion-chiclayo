@@ -1,0 +1,13 @@
+{
+  "capacidad_kg": 10000,
+  "camiones": 2,
+  "viajes_por_camion": 3,
+  "poblacion": 100,
+  "generaciones": 500,
+  "prob_cruce": 0.9,
+  "prob_mutacion": 0.2,
+  "elite": 2,
+  "torneo": 3,
+  "paciencia": 100,
+  "semilla": 42
+}

@@ -1,0 +1,113 @@
+{
+  "semillas_prefijadas": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    42
+  ],
+  "referencia_km": 292.47229999999996,
+  "mejor_km": 281.21969999999993,
+  "mediana_km": 285.24639999999994,
+  "media_km": 284.39689999999996,
+  "desviacion_estandar_muestral_km": 2.5573225590666344,
+  "peor_km": 286.87829999999997,
+  "tiempo_medio_s": 0.16481456999608782,
+  "ejecuciones": [
+    {
+      "semilla": 0,
+      "referencia_km": 292.47229999999996,
+      "ag_km": 281.2743,
+      "mejora_pct": 3.828738653198946,
+      "generaciones": 115,
+      "tiempo_s": 0.11842279997654259,
+      "viajes": 5
+    },
+    {
+      "semilla": 1,
+      "referencia_km": 292.47229999999996,
+      "ag_km": 281.21969999999993,
+      "mejora_pct": 3.8474070877823405,
+      "generaciones": 185,
+      "tiempo_s": 0.2780868000118062,
+      "viajes": 5
+    },
+    {
+      "semilla": 2,
+      "referencia_km": 292.47229999999996,
+      "ag_km": 286.77979999999997,
+      "mejora_pct": 1.9463381660417058,
+      "generaciones": 123,
+      "tiempo_s": 0.14253319997806102,
+      "viajes": 5
+    },
+    {
+      "semilla": 3,
+      "referencia_km": 292.47229999999996,
+      "ag_km": 286.77979999999997,
+      "mejora_pct": 1.9463381660417058,
+      "generaciones": 149,
+      "tiempo_s": 0.18714389999513514,
+      "viajes": 5
+    },
+    {
+      "semilla": 4,
+      "referencia_km": 292.47229999999996,
+      "ag_km": 285.24639999999994,
+      "mejora_pct": 2.470627132894303,
+      "generaciones": 122,
+      "tiempo_s": 0.14294029999291524,
+      "viajes": 5
+    },
+    {
+      "semilla": 5,
+      "referencia_km": 292.47229999999996,
+      "ag_km": 281.21969999999993,
+      "mejora_pct": 3.8474070877823405,
+      "generaciones": 138,
+      "tiempo_s": 0.1565730000147596,
+      "viajes": 5
+    },
+    {
+      "semilla": 6,
+      "referencia_km": 292.47229999999996,
+      "ag_km": 286.87829999999997,
+      "mejora_pct": 1.912659762992938,
+      "generaciones": 115,
+      "tiempo_s": 0.12078810000093654,
+      "viajes": 5
+    },
+    {
+      "semilla": 7,
+      "referencia_km": 292.47229999999996,
+      "ag_km": 285.24639999999994,
+      "mejora_pct": 2.470627132894303,
+      "generaciones": 117,
+      "tiempo_s": 0.14600330000394024,
+      "viajes": 5
+    },
+    {
+      "semilla": 8,
+      "referencia_km": 292.47229999999996,
+      "ag_km": 282.4463,
+      "mejora_pct": 3.4280169438268016,
+      "generaciones": 118,
+      "tiempo_s": 0.15982000000076368,
+      "viajes": 5
+    },
+    {
+      "semilla": 42,
+      "referencia_km": 292.47229999999996,
+      "ag_km": 286.87829999999997,
+      "mejora_pct": 1.912659762992938,
+      "generaciones": 149,
+      "tiempo_s": 0.19583429998601787,
+      "viajes": 5
+    }
+  ]
+}

@@ -1,0 +1,1064 @@
+{
+  "configuracion": {
+    "capacidad_kg": 10000,
+    "camiones": 2,
+    "viajes_por_camion": 3,
+    "poblacion": 100,
+    "generaciones": 500,
+    "prob_cruce": 0.9,
+    "prob_mutacion": 0.2,
+    "elite": 2,
+    "torneo": 3,
+    "paciencia": 100,
+    "semilla": 4
+  },
+  "referencia": {
+    "orden": [
+      "CH-987",
+      "CH-991",
+      "CH-1007",
+      "CH-1003",
+      "CH-1006",
+      "CH-997",
+      "CH-990",
+      "CH-984",
+      "CH-1011",
+      "CH-1010",
+      "CH-1009",
+      "CH-998",
+      "CH-985",
+      "CH-994",
+      "CH-999"
+    ],
+    "distancia_km": 292.47229999999996,
+    "fitness": 0.003407476617043585,
+    "viajes": [
+      {
+        "viaje": 1,
+        "camion": 1,
+        "turno_camion": 1,
+        "carga_kg": 10000.0,
+        "capacidad_kg": 10000.0,
+        "distancia_km": 57.7735,
+        "paradas": [
+          {
+            "id_mercado": "CH-987",
+            "kg": 505.18
+          },
+          {
+            "id_mercado": "CH-991",
+            "kg": 2701.18
+          },
+          {
+            "id_mercado": "CH-1007",
+            "kg": 1433.07
+          },
+          {
+            "id_mercado": "CH-1003",
+            "kg": 1134.08
+          },
+          {
+            "id_mercado": "CH-1006",
+            "kg": 4226.49
+          }
+        ]
+      },
+      {
+        "viaje": 2,
+        "camion": 2,
+        "turno_camion": 1,
+        "carga_kg": 10000.0,
+        "capacidad_kg": 10000.0,
+        "distancia_km": 54.1267,
+        "paradas": [
+          {
+            "id_mercado": "CH-1006",
+            "kg": 10000.0
+          }
+        ]
+      },
+      {
+        "viaje": 3,
+        "camion": 1,
+        "turno_camion": 2,
+        "carga_kg": 10000.0,
+        "capacidad_kg": 10000.0,
+        "distancia_km": 54.47579999999999,
+        "paradas": [
+          {
+            "id_mercado": "CH-1006",
+            "kg": 4573.51
+          },
+          {
+            "id_mercado": "CH-997",
+            "kg": 4690.98
+          },
+          {
+            "id_mercado": "CH-990",
+            "kg": 735.51
+          }
+        ]
+      },
+      {
+        "viaje": 4,
+        "camion": 2,
+        "turno_camion": 2,
+        "carga_kg": 10000.0,
+        "capacidad_kg": 10000.0,
+        "distancia_km": 66.537,
+        "paradas": [
+          {
+            "id_mercado": "CH-990",
+            "kg": 1903.81
+          },
+          {
+            "id_mercado": "CH-984",
+            "kg": 587.66
+          },
+          {
+            "id_mercado": "CH-1011",
+            "kg": 737.15
+          },
+          {
+            "id_mercado": "CH-1010",
+            "kg": 2577.46
+          },
+          {
+            "id_mercado": "CH-1009",
+            "kg": 2577.46
+          },
+          {
+            "id_mercado": "CH-998",
+            "kg": 603.13
+          },
+          {
+            "id_mercado": "CH-985",
+            "kg": 1013.33
+          }
+        ]
+      },
+      {
+        "viaje": 5,
+        "camion": 1,
+        "turno_camion": 3,
+        "carga_kg": 1904.36,
+        "capacidad_kg": 10000.0,
+        "distancia_km": 59.55929999999999,
+        "paradas": [
+          {
+            "id_mercado": "CH-985",
+            "kg": 270.25
+          },
+          {
+            "id_mercado": "CH-994",
+            "kg": 603.13
+          },
+          {
+            "id_mercado": "CH-999",
+            "kg": 1030.98
+          }
+        ]
+      }
+    ],
+    "viajes_totales": 5,
+    "demanda_recogida_kg": 41904.36
+  },
+  "solucion": {
+    "orden": [
+      "CH-987",
+      "CH-991",
+      "CH-1007",
+      "CH-1003",
+      "CH-1006",
+      "CH-997",
+      "CH-990",
+      "CH-984",
+      "CH-1011",
+      "CH-1010",
+      "CH-998",
+      "CH-994",
+      "CH-985",
+      "CH-999",
+      "CH-1009"
+    ],
+    "distancia_km": 285.24639999999994,
+    "fitness": 0.0034934937173008995,
+    "viajes": [
+      {
+        "viaje": 1,
+        "camion": 1,
+        "turno_camion": 1,
+        "carga_kg": 10000.0,
+        "capacidad_kg": 10000.0,
+        "distancia_km": 57.7735,
+        "paradas": [
+          {
+            "id_mercado": "CH-987",
+            "kg": 505.18
+          },
+          {
+            "id_mercado": "CH-991",
+            "kg": 2701.18
+          },
+          {
+            "id_mercado": "CH-1007",
+            "kg": 1433.07
+          },
+          {
+            "id_mercado": "CH-1003",
+            "kg": 1134.08
+          },
+          {
+            "id_mercado": "CH-1006",
+            "kg": 4226.49
+          }
+        ]
+      },
+      {
+        "viaje": 2,
+        "camion": 2,
+        "turno_camion": 1,
+        "carga_kg": 10000.0,
+        "capacidad_kg": 10000.0,
+        "distancia_km": 54.1267,
+        "paradas": [
+          {
+            "id_mercado": "CH-1006",
+            "kg": 10000.0
+          }
+        ]
+      },
+      {
+        "viaje": 3,
+        "camion": 1,
+        "turno_camion": 2,
+        "carga_kg": 10000.0,
+        "capacidad_kg": 10000.0,
+        "distancia_km": 54.47579999999999,
+        "paradas": [
+          {
+            "id_mercado": "CH-1006",
+            "kg": 4573.51
+          },
+          {
+            "id_mercado": "CH-997",
+            "kg": 4690.98
+          },
+          {
+            "id_mercado": "CH-990",
+            "kg": 735.51
+          }
+        ]
+      },
+      {
+        "viaje": 4,
+        "camion": 2,
+        "turno_camion": 2,
+        "carga_kg": 10000.0,
+        "capacidad_kg": 10000.0,
+        "distancia_km": 66.6228,
+        "paradas": [
+          {
+            "id_mercado": "CH-990",
+            "kg": 1903.81
+          },
+          {
+            "id_mercado": "CH-984",
+            "kg": 587.66
+          },
+          {
+            "id_mercado": "CH-1011",
+            "kg": 737.15
+          },
+          {
+            "id_mercado": "CH-1010",
+            "kg": 2577.46
+          },
+          {
+            "id_mercado": "CH-998",
+            "kg": 603.13
+          },
+          {
+            "id_mercado": "CH-994",
+            "kg": 603.13
+          },
+          {
+            "id_mercado": "CH-985",
+            "kg": 1283.58
+          },
+          {
+            "id_mercado": "CH-999",
+            "kg": 1030.98
+          },
+          {
+            "id_mercado": "CH-1009",
+            "kg": 673.1
+          }
+        ]
+      },
+      {
+        "viaje": 5,
+        "camion": 1,
+        "turno_camion": 3,
+        "carga_kg": 1904.36,
+        "capacidad_kg": 10000.0,
+        "distancia_km": 52.2476,
+        "paradas": [
+          {
+            "id_mercado": "CH-1009",
+            "kg": 1904.36
+          }
+        ]
+      }
+    ],
+    "viajes_totales": 5,
+    "demanda_recogida_kg": 41904.36
+  },
+  "mejora_porcentaje": 2.470627132894303,
+  "historial": [
+    {
+      "generacion": 0,
+      "mejor_km": 292.47229999999996,
+      "promedio_km": 318.540538,
+      "fitness_mejor": 0.003407476617043585
+    },
+    {
+      "generacion": 1,
+      "mejor_km": 292.47229999999996,
+      "promedio_km": 315.498986,
+      "fitness_mejor": 0.003407476617043585
+    },
+    {
+      "generacion": 2,
+      "mejor_km": 285.63289999999995,
+      "promedio_km": 311.694381,
+      "fitness_mejor": 0.0034887830392114796
+    },
+    {
+      "generacion": 3,
+      "mejor_km": 285.63289999999995,
+      "promedio_km": 309.92520099999996,
+      "fitness_mejor": 0.0034887830392114796
+    },
+    {
+      "generacion": 4,
+      "mejor_km": 285.63289999999995,
+      "promedio_km": 305.45897399999996,
+      "fitness_mejor": 0.0034887830392114796
+    },
+    {
+      "generacion": 5,
+      "mejor_km": 285.63289999999995,
+      "promedio_km": 303.945503,
+      "fitness_mejor": 0.0034887830392114796
+    },
+    {
+      "generacion": 6,
+      "mejor_km": 285.63289999999995,
+      "promedio_km": 302.234781,
+      "fitness_mejor": 0.0034887830392114796
+    },
+    {
+      "generacion": 7,
+      "mejor_km": 285.63289999999995,
+      "promedio_km": 300.544908,
+      "fitness_mejor": 0.0034887830392114796
+    },
+    {
+      "generacion": 8,
+      "mejor_km": 285.63289999999995,
+      "promedio_km": 298.600997,
+      "fitness_mejor": 0.0034887830392114796
+    },
+    {
+      "generacion": 9,
+      "mejor_km": 285.63289999999995,
+      "promedio_km": 295.48125899999997,
+      "fitness_mejor": 0.0034887830392114796
+    },
+    {
+      "generacion": 10,
+      "mejor_km": 285.63289999999995,
+      "promedio_km": 293.62115199999994,
+      "fitness_mejor": 0.0034887830392114796
+    },
+    {
+      "generacion": 11,
+      "mejor_km": 285.63289999999995,
+      "promedio_km": 291.381265,
+      "fitness_mejor": 0.0034887830392114796
+    },
+    {
+      "generacion": 12,
+      "mejor_km": 285.4388,
+      "promedio_km": 290.56261099999995,
+      "fitness_mejor": 0.003491147149059415
+    },
+    {
+      "generacion": 13,
+      "mejor_km": 285.4388,
+      "promedio_km": 288.304134,
+      "fitness_mejor": 0.003491147149059415
+    },
+    {
+      "generacion": 14,
+      "mejor_km": 285.4388,
+      "promedio_km": 286.73420799999997,
+      "fitness_mejor": 0.003491147149059415
+    },
+    {
+      "generacion": 15,
+      "mejor_km": 285.4388,
+      "promedio_km": 288.73072899999994,
+      "fitness_mejor": 0.003491147149059415
+    },
+    {
+      "generacion": 16,
+      "mejor_km": 285.4388,
+      "promedio_km": 289.31503299999997,
+      "fitness_mejor": 0.003491147149059415
+    },
+    {
+      "generacion": 17,
+      "mejor_km": 285.4388,
+      "promedio_km": 288.828729,
+      "fitness_mejor": 0.003491147149059415
+    },
+    {
+      "generacion": 18,
+      "mejor_km": 285.4388,
+      "promedio_km": 288.98751599999997,
+      "fitness_mejor": 0.003491147149059415
+    },
+    {
+      "generacion": 19,
+      "mejor_km": 285.4388,
+      "promedio_km": 288.49125100000003,
+      "fitness_mejor": 0.003491147149059415
+    },
+    {
+      "generacion": 20,
+      "mejor_km": 285.4388,
+      "promedio_km": 286.734032,
+      "fitness_mejor": 0.003491147149059415
+    },
+    {
+      "generacion": 21,
+      "mejor_km": 285.4388,
+      "promedio_km": 287.247521,
+      "fitness_mejor": 0.003491147149059415
+    },
+    {
+      "generacion": 22,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.561463,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 23,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.333806,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 24,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.80231100000003,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 25,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 288.092698,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 26,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 288.62537999999995,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 27,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.89462899999995,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 28,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.483593,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 29,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.465288,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 30,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.300618,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 31,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.73488599999996,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 32,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.562149,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 33,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.66444599999994,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 34,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.57200399999994,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 35,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.71338299999996,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 36,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.07512199999996,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 37,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.060663,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 38,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.2659689999999,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 39,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.46267499999993,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 40,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.8708429999999,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 41,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.91845299999994,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 42,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.2655219999999,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 43,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.75792799999994,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 44,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.84340599999996,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 45,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.34165499999995,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 46,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.22263599999997,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 47,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.14972599999993,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 48,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.14751699999994,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 49,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.39647599999995,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 50,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.2565219999999,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 51,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.07088099999993,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 52,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.8007999999999,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 53,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.33352599999995,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 54,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.22603799999996,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 55,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.4784659999999,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 56,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.72345699999994,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 57,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.95783099999994,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 58,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.28525599999995,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 59,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.89437799999996,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 60,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.51757399999997,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 61,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.65775699999995,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 62,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.65679099999994,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 63,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.16596999999996,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 64,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.43949399999997,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 65,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.20573299999995,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 66,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.61762999999996,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 67,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.0983949999999,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 68,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.21302699999995,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 69,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.82818499999996,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 70,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.96196199999997,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 71,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.272051,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 72,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.61114499999996,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 73,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.46383699999996,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 74,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.812375,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 75,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.00015699999994,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 76,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.38542099999995,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 77,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.7720979999999,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 78,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.811001,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 79,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.8407209999999,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 80,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.7773409999999,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 81,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.55477999999994,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 82,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.4386129999999,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 83,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.72780499999993,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 84,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.20964999999995,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 85,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.14188399999995,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 86,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.93524999999994,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 87,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.04299699999996,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 88,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.01037399999996,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 89,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.60908399999994,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 90,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.2689929999999,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 91,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.60964899999993,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 92,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.772186,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 93,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.84761299999997,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 94,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.88999699999994,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 95,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.06589099999997,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 96,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.688164,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 97,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.73044999999996,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 98,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.29449199999993,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 99,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.61865099999994,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 100,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.22361599999994,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 101,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.853979,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 102,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.99943099999996,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 103,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.91827799999993,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 104,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.21510699999993,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 105,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.79424399999994,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 106,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.234247,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 107,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.877306,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 108,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.58313599999997,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 109,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.10319699999997,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 110,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.232153,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 111,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.9307539999999,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 112,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.93134999999995,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 113,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.59537499999993,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 114,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.26329699999997,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 115,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.78126899999995,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 116,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.60776899999996,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 117,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 286.2412999999999,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 118,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.17802399999994,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 119,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.40699599999994,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 120,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.45262599999995,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 121,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.24671399999994,
+      "fitness_mejor": 0.0034934937173008995
+    },
+    {
+      "generacion": 122,
+      "mejor_km": 285.24639999999994,
+      "promedio_km": 287.25027499999993,
+      "fitness_mejor": 0.0034934937173008995
+    }
+  ],
+  "generaciones_ejecutadas": 122,
+  "motivo_parada": "estancamiento",
+  "evaluaciones_distintas": 1258,
+  "tiempo_segundos": 0.14294029999291524,
+  "sha256_dataset": "45fa525ca03eb500b17d78740de1ba5bcfffa70ae1ee847d2ad58e90bbc266cc",
+  "alcance": "Mejor solucion encontrada en la familia del decodificador; sin garantia de optimo global."
+}

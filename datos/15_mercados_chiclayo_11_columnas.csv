@@ -1,0 +1,16 @@
+﻿rango,id_mercado,mercado,distrito,provincia,puestos_fijos_reportados,residuos_kg_dia_estimados,residuos_t_dia_estimados,latitud_wgs84,longitud_wgs84,direccion
+1,CH-1006,Mercado Moshoqueque,José Leonardo Ortiz,Chiclayo,3647,18800.0,18.8,-6.75777,-79.84265,Av. Kennedy cuadra 4 (referencia de acceso)
+2,CH-997,Mercado Modelo Chiclayo,Chiclayo,Chiclayo,910,4690.98,4.69098,-6.76596,-79.83907,Calle Arica s/n
+3,CH-991,Mercado de Abastos José Balta,Chiclayo,Chiclayo,524,2701.18,2.70118,-6.76398,-79.83218,Av. Nicolás de Piérola s/n
+4,CH-990,Mercado Central de Chiclayo,Chiclayo,Chiclayo,512,2639.32,2.63932,-6.77007,-79.83894,Av. José Balta 961
+5,CH-1010,Mercado El Inca,La Victoria,Chiclayo,500,2577.46,2.57746,-6.79837,-79.84471,"Pasaje Las Ñustas s/n, esquina con calle Virú"
+6,CH-1009,Mercado AZ,La Victoria,Chiclayo,500,2577.46,2.57746,-6.80165,-79.83827,"Av. Gran Chimú s/n, frente a vía de evitamiento"
+7,CH-1007,Mercado Pedro Pablo Atusparias,José Leonardo Ortiz,Chiclayo,278,1433.07,1.43307,-6.7595,-79.82534,"Av. Agricultura s/n, altura de la cuadra 3 de calle 5 de Abril"
+8,CH-985,Mercado 9 de Octubre,Chiclayo,Chiclayo,249,1283.58,1.28358,-6.77537,-79.86323,Av. El Ejército s/n
+9,CH-1003,Mercado Carolina,José Leonardo Ortiz,Chiclayo,220,1134.08,1.13408,-6.75065,-79.83144,"Esquina con calle Roma, 4.º sector de Urrunaga"
+10,CH-999,Mercado Sol de Oro,Chiclayo,Chiclayo,200,1030.98,1.03098,-6.78328,-79.86459,Av. Alva Díaz s/n
+11,CH-1011,Mercado Orrego,La Victoria,Chiclayo,143,737.15,0.73715,-6.79262,-79.83456,"Av. Unión 375, esquina con Av. Antenor Orrego"
+12,CH-998,Mercado Santa Rosa de Lima (José Olaya),Chiclayo,Chiclayo,117,603.13,0.60313,-6.7713,-79.85367,Calle Piura s/n
+13,CH-994,Mercado José Abelardo Quiñones Gonzales,Chiclayo,Chiclayo,117,603.13,0.60313,-6.77059,-79.86665,Calle Sargento Lores s/n
+14,CH-984,Mercadito Buenos Aires,Chiclayo,Chiclayo,114,587.66,0.58766,-6.77936,-79.84146,Av. Garcilazo de la Vega 299
+15,CH-987,Mercado Benjamín Gamarra,Chiclayo,Chiclayo,98,505.18,0.50518,-6.7665,-79.83064,Calle Tarapacá 566

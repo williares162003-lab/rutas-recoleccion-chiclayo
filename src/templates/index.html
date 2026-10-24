@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Rutas Chiclayo · TA02</title>
+  <link rel="stylesheet" href="/static/css/estilos.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       CABECERA
+       ============================================================ -->
+  <header>
+    <div class="marca">RC<span>Rutas Chiclayo</span></div>
+    <span class="etiqueta">TA02 · Algoritmos genéticos</span>
+  </header>
+
+  <main>
+
+    <!-- Presentación del sistema y aviso del escenario académico -->
+    <div class="intro">
+      <p class="sobretitulo">PLANIFICACIÓN DE RECOLECCIÓN</p>
+      <h1>Menos recorrido.<br>La misma carga recogida.</h1>
+      <p>Ordena la recolección de 15 mercados de Chiclayo mediante un algoritmo genético con capacidad por viaje.</p>
+    </div>
+    <div class="aviso">Escenario académico con residuos estimados. Base EPSEL y botadero de Reque son puntos referenciales. La ruta requiere validar accesos, carga útil y horarios antes de su uso operativo.</div>
+
+    <!-- Pestañas: cada botón muestra el panel con el mismo id -->
+    <nav aria-label="Secciones">
+      <button class="activo" data-tab="plan">Planificar</button>
+      <button data-tab="datos">Datos y flota</button>
+      <button data-tab="metodo">Método y fuentes</button>
+    </nav>
+
+    <!-- ============================================================
+         PESTAÑA 1: PLANIFICAR
+         ============================================================ -->
+    <section id="plan" class="panel activo">
+      <div class="layout">
+
+        <!-- Formulario de configuración del escenario y del algoritmo -->
+        <aside class="tarjeta">
+          <h2>Configurar escenario</h2>
+          <p class="suave">Flota homogénea de referencia. Los kg son editables; el PIGARS publica volumen en m³.</p>
+          <form id="config">
+            <div class="dos">
+              <label>Capacidad por viaje (kg)<input id="capacidad_kg" type="number" min="1" max="100000" step="0.01" required></label>
+              <label>Camiones del escenario<input id="camiones" type="number" min="1" max="30" required></label>
+            </div>
+            <div class="dos">
+              <label>Viajes por camión<input id="viajes_por_camion" type="number" min="1" max="30" required></label>
+              <label>Semilla aleatoria<input id="semilla" type="number" min="0" max="4294967295" required></label>
+            </div>
+
+            <!-- Hiperparámetros del AG (población, generaciones, probabilidades, élites, torneo, parada) -->
+            <details>
+              <summary>Parámetros del algoritmo</summary>
+              <div class="dos">
+                <label>Población<input id="poblacion" type="number" min="4" max="500" required></label>
+                <label>Generaciones máximas<input id="generaciones" type="number" min="1" max="3000" required></label>
+                <label>Probabilidad de cruce<input id="prob_cruce" type="number" min="0" max="1" step="0.01" required></label>
+                <label>Probabilidad de mutación<input id="prob_mutacion" type="number" min="0" max="1" step="0.01" required></label>
+                <label>Élites<input id="elite" type="number" min="1" max="50" required></label>
+                <label>Tamaño del torneo<input id="torneo" type="number" min="2" max="50" required></label>
+                <label>Parada sin mejora<input id="paciencia" type="number" min="1" max="3000" required></label>
+              </div>
+            </details>
+
+            <p id="capacidadResumen" class="suave"></p>
+            <button id="ejecutar" class="primario" type="submit">Optimizar rutas <span>→</span></button>
+            <button id="ejemplo" class="secundario" type="button">Ver ejecución guardada</button>
+            <p id="estado" role="status" aria-live="polite">Cargando datos…</p>
+          </form>
+        </aside>
+
+        <div>
+          <!-- Métricas: referencia, mejor distancia del AG y reducción -->
+          <div class="metricas">
+            <article><span>Distancia de referencia</span><strong id="baseKm">—</strong><small>Vecino más cercano</small></article>
+            <article><span>Mejor distancia AG</span><strong id="agKm">—</strong><small>Mejor solución encontrada</small></article>
+            <article><span>Reducción del recorrido</span><strong id="mejora">—</strong><small>En el mismo escenario</small></article>
+          </div>
+
+          <!-- Curva de convergencia por generación -->
+          <article class="tarjeta">
+            <div class="cabecera">
+              <div>
+                <h2>Evolución por generación</h2>
+                <p class="suave">Distancia del mejor individuo y promedio de la población.</p>
+              </div>
+              <span id="generacionesInfo" class="etiqueta">Sin ejecución</span>
+            </div>
+            <div id="grafico" class="grafico"><p>Ejecuta el algoritmo para ver la convergencia.</p></div>
+            <div class="leyenda"><span class="linea mejor"></span>Mejor distancia <span class="linea promedio"></span>Promedio</div>
+          </article>
+
+          <!-- Plan de viajes y descargas -->
+          <article class="tarjeta">
+            <div class="cabecera">
+              <h2>Plan de viajes</h2>
+              <div><button id="json" disabled>Descargar JSON</button> <button id="csv" disabled>Descargar CSV</button></div>
+            </div>
+            <p id="planResumen" class="suave">Cada viaje sale de base, recoge su carga, descarga en Reque y regresa a base.</p>
+            <div id="viajes"><p>Las rutas aparecerán aquí.</p></div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PESTAÑA 2: DATOS Y FLOTA
+         ============================================================ -->
+    <section id="datos" class="panel">
+
+      <!-- Tabla de los 15 mercados (se llena desde /api/datos) -->
+      <div class="tarjeta">
+        <h2>15 mercados · 41 904,36 kg/día estimados</h2>
+        <p>CSV original de 11 columnas preservado. Referencia: 18 800 kg/día de Moshoqueque divididos entre 3 647 puestos; no es un pesaje actual por mercado.</p>
+        <div class="tabla">
+          <table>
+            <thead><tr><th>Mercado</th><th>Distrito</th><th>Puestos fijos</th><th>Residuos kg/día</th><th>Coordenadas WGS84</th></tr></thead>
+            <tbody id="mercados"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Flota publicada por la municipalidad -->
+      <div class="tarjeta">
+        <h2>Flota publicada en el PIGARS 2026–2030</h2>
+        <p>22 registros: 18 de 15 m³, tres de 17 m³ y uno de 21 m³. La placa EAO-832 aparece dos veces. No equivalen a 22 vehículos distintos disponibles. La carga útil en kg no se publica en esta tabla.</p>
+        <p><a target="_blank" rel="noreferrer" href="https://www.gob.pe/institucion/munichiclayo/normas-legales/7732781-000001-2026-mpch-a">Abrir fuente municipal · tabla 84, página PDF 155</a></p>
+        <div class="tabla">
+          <table>
+            <thead><tr><th>Unidad</th><th>Placa o motor</th><th>Volumen m³</th><th>Carga útil kg</th></tr></thead>
+            <tbody id="flota"></tbody>
+          </table>
+        </div>
+        <p class="suave">Capacidad adoptada por el equipo: 10 000 kg por camión y por viaje. Dos camiones y hasta tres viajes por camión forman el escenario de simulación. Los mercados pertenecen a tres distritos; el modelo agrupa su servicio.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PESTAÑA 3: MÉTODO Y FUENTES
+         ============================================================ -->
+    <section id="metodo" class="panel">
+      <div class="tarjeta lectura">
+        <h2>Un AG generacional de permutaciones</h2>
+        <p>Inicializar → evaluar → seleccionar por torneo → cruzar con OX → mutar por intercambio → conservar élites → repetir hasta la parada.</p>
+        <p>Cada gen es un mercado. El decodificador recorre ese orden y divide la carga entre viajes de capacidad limitada. Un mercado puede recibir más de una visita. El objetivo es minimizar la suma de distancias dirigidas de todos los viajes.</p>
+        <p>La referencia usa vecino más cercano y el mismo decodificador. Se incluye en la población inicial; por eso el elitismo impide empeorar esa referencia. No se dispone de una ruta tradicional municipal medida.</p>
+
+        <h2>Qué significa el resultado</h2>
+        <p>Se obtiene la mejor solución hallada por el AG. No se certifica el óptimo global ni el cumplimiento de una jornada: no se modelan tráfico en vivo, tiempos de recojo, ventanas horarias, calles aptas para camiones o flota heterogénea.</p>
+
+        <h2>Fuentes y aportes</h2>
+        <ul>
+          <li><a href="https://www.frontiersin.org/journals/sustainability/articles/10.3389/frsus.2025.1716538/full" target="_blank" rel="noreferrer">Hamontree y colaboradores, Bangkok</a>: referencia heurística y AG para recolección.</li>
+          <li><a href="https://www.ceer.com.pl/pdf-167886-90975?filename=Vehicle-Routing-Optimizat.pdf" target="_blank" rel="noreferrer">Assaf y Saleh, Nablus</a>: capacidad, depósito y lugar de descarga.</li>
+          <li><a href="https://opendl.ifip-tc6.org/db/conf/ifip12/aiai2007/KaradimasPL07.pdf" target="_blank" rel="noreferrer">Karadimas y colaboradores, Atenas</a>: rutas de residuos y distancias asimétricas.</li>
+          <li><a href="https://www.deperu.com/mercados/provincia_chiclayo_lambayeque.html" target="_blank" rel="noreferrer">DePerú</a>: nombres, direcciones y puestos.</li>
+          <li><a href="https://es.scribd.com/document/700205729/ACTA-DE-SESION-EXTRAORDINARIA-12-06-2023" target="_blank" rel="noreferrer">Copia del acta de JLO del 12/06/2023</a>: referencia histórica de 18,8 t/día; volumen por densidad, no pesaje actual.</li>
+          <li><a href="https://project-osrm.org/docs/v5.24.0/api/" target="_blank" rel="noreferrer">OSRM sobre OpenStreetMap</a>: matriz vial de 17 puntos consultada el 15/10/2026; perfil automóvil.</li>
+        </ul>
+        <p>El registro completo está en <strong>docs/Fuentes_y_aportes.md</strong>, junto con la explicación de los supuestos y las fuentes oficiales de capacidad.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>Desarrollo de Sistemas Inteligentes · Python sin librerías externas de AG · Escenario de 15 mercados</footer>
+
+  <!-- Lógica de la interfaz -->
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

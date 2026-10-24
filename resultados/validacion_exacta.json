@@ -1,0 +1,695 @@
+{
+  "alcance": "Optimo exacto dentro del espacio del decodificador (todas las permutaciones). No certifica el VRP general con recogidas divididas.",
+  "prob_busqueda_local_hibrido": 0.02,
+  "resumen": {
+    "ag": {
+      "instancias": 25,
+      "optimo_alcanzado": 20,
+      "brecha_maxima_pct": 0.6087656835123739
+    },
+    "hibrido": {
+      "instancias": 25,
+      "optimo_alcanzado": 25,
+      "brecha_maxima_pct": 1.1114033480049958e-14
+    }
+  },
+  "primeros_n": [
+    {
+      "instancia": "primeros_6",
+      "mercados": 6,
+      "ordenes_posibles": 720,
+      "optimo_km": 217.4726,
+      "tiempo_enumeracion_s": 0.01,
+      "ag": {
+        "km": 217.4726,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 278,
+        "fraccion_evaluada_pct": 38.611111111111114
+      },
+      "hibrido": {
+        "km": 217.4726,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 359,
+        "fraccion_evaluada_pct": 49.861111111111114
+      }
+    },
+    {
+      "instancia": "primeros_7",
+      "mercados": 7,
+      "ordenes_posibles": 5040,
+      "optimo_km": 217.65679999999998,
+      "tiempo_enumeracion_s": 0.04,
+      "ag": {
+        "km": 217.65679999999998,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 510,
+        "fraccion_evaluada_pct": 10.119047619047619
+      },
+      "hibrido": {
+        "km": 217.65679999999998,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 762,
+        "fraccion_evaluada_pct": 15.119047619047619
+      }
+    },
+    {
+      "instancia": "primeros_8",
+      "mercados": 8,
+      "ordenes_posibles": 40320,
+      "optimo_km": 221.3125,
+      "tiempo_enumeracion_s": 0.31,
+      "ag": {
+        "km": 221.3125,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 765,
+        "fraccion_evaluada_pct": 1.8973214285714286
+      },
+      "hibrido": {
+        "km": 221.3125,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 1228,
+        "fraccion_evaluada_pct": 3.0456349206349205
+      }
+    },
+    {
+      "instancia": "primeros_9",
+      "mercados": 9,
+      "ordenes_posibles": 362880,
+      "optimo_km": 223.26770000000002,
+      "tiempo_enumeracion_s": 4.46,
+      "ag": {
+        "km": 223.34189999999995,
+        "brecha_pct": 0.03323364732110978,
+        "evaluaciones_distintas": 658,
+        "fraccion_evaluada_pct": 0.18132716049382716
+      },
+      "hibrido": {
+        "km": 223.26770000000002,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 2208,
+        "fraccion_evaluada_pct": 0.6084656084656085
+      }
+    },
+    {
+      "instancia": "primeros_10",
+      "mercados": 10,
+      "ordenes_posibles": 3628800,
+      "optimo_km": 224.73359999999997,
+      "tiempo_enumeracion_s": 68.29,
+      "ag": {
+        "km": 224.73359999999997,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 845,
+        "fraccion_evaluada_pct": 0.02328593474426808
+      },
+      "hibrido": {
+        "km": 224.73359999999997,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 2660,
+        "fraccion_evaluada_pct": 0.07330246913580248
+      }
+    }
+  ],
+  "aleatorias_8": [
+    {
+      "instancia": "aleatoria_8_1",
+      "mercados": 8,
+      "ordenes_posibles": 40320,
+      "optimo_km": 116.5065,
+      "tiempo_enumeracion_s": 0.64,
+      "ag": {
+        "km": 116.5065,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 737,
+        "fraccion_evaluada_pct": 1.8278769841269842
+      },
+      "hibrido": {
+        "km": 116.5065,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 1288,
+        "fraccion_evaluada_pct": 3.1944444444444446
+      },
+      "ids": [
+        "CH-997",
+        "CH-1009",
+        "CH-1003",
+        "CH-994",
+        "CH-1011",
+        "CH-987",
+        "CH-990",
+        "CH-1007"
+      ]
+    },
+    {
+      "instancia": "aleatoria_8_2",
+      "mercados": 8,
+      "ordenes_posibles": 40320,
+      "optimo_km": 63.609100000000005,
+      "tiempo_enumeracion_s": 0.54,
+      "ag": {
+        "km": 63.609100000000005,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 739,
+        "fraccion_evaluada_pct": 1.8328373015873016
+      },
+      "hibrido": {
+        "km": 63.609100000000005,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 974,
+        "fraccion_evaluada_pct": 2.4156746031746033
+      },
+      "ids": [
+        "CH-994",
+        "CH-999",
+        "CH-1003",
+        "CH-998",
+        "CH-985",
+        "CH-984",
+        "CH-1011",
+        "CH-990"
+      ]
+    },
+    {
+      "instancia": "aleatoria_8_3",
+      "mercados": 8,
+      "ordenes_posibles": 40320,
+      "optimo_km": 223.4664,
+      "tiempo_enumeracion_s": 0.53,
+      "ag": {
+        "km": 223.4664,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 740,
+        "fraccion_evaluada_pct": 1.8353174603174602
+      },
+      "hibrido": {
+        "km": 223.4664,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 1256,
+        "fraccion_evaluada_pct": 3.115079365079365
+      },
+      "ids": [
+        "CH-1006",
+        "CH-999",
+        "CH-997",
+        "CH-994",
+        "CH-1010",
+        "CH-998",
+        "CH-985",
+        "CH-987"
+      ]
+    },
+    {
+      "instancia": "aleatoria_8_4",
+      "mercados": 8,
+      "ordenes_posibles": 40320,
+      "optimo_km": 114.45720000000001,
+      "tiempo_enumeracion_s": 0.51,
+      "ag": {
+        "km": 114.45720000000001,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 658,
+        "fraccion_evaluada_pct": 1.6319444444444444
+      },
+      "hibrido": {
+        "km": 114.45720000000001,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 1093,
+        "fraccion_evaluada_pct": 2.710813492063492
+      },
+      "ids": [
+        "CH-984",
+        "CH-1011",
+        "CH-985",
+        "CH-987",
+        "CH-1009",
+        "CH-990",
+        "CH-1007",
+        "CH-1010"
+      ]
+    },
+    {
+      "instancia": "aleatoria_8_5",
+      "mercados": 8,
+      "ordenes_posibles": 40320,
+      "optimo_km": 117.0085,
+      "tiempo_enumeracion_s": 0.48,
+      "ag": {
+        "km": 117.0085,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 758,
+        "fraccion_evaluada_pct": 1.8799603174603174
+      },
+      "hibrido": {
+        "km": 117.0085,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 1085,
+        "fraccion_evaluada_pct": 2.6909722222222223
+      },
+      "ids": [
+        "CH-1009",
+        "CH-987",
+        "CH-994",
+        "CH-1007",
+        "CH-1003",
+        "CH-997",
+        "CH-984",
+        "CH-999"
+      ]
+    },
+    {
+      "instancia": "aleatoria_8_6",
+      "mercados": 8,
+      "ordenes_posibles": 40320,
+      "optimo_km": 170.2336,
+      "tiempo_enumeracion_s": 0.57,
+      "ag": {
+        "km": 170.2336,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 693,
+        "fraccion_evaluada_pct": 1.71875
+      },
+      "hibrido": {
+        "km": 170.2336,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 1317,
+        "fraccion_evaluada_pct": 3.2663690476190474
+      },
+      "ids": [
+        "CH-1003",
+        "CH-987",
+        "CH-1010",
+        "CH-994",
+        "CH-985",
+        "CH-991",
+        "CH-998",
+        "CH-1006"
+      ]
+    },
+    {
+      "instancia": "aleatoria_8_7",
+      "mercados": 8,
+      "ordenes_posibles": 40320,
+      "optimo_km": 115.5714,
+      "tiempo_enumeracion_s": 0.63,
+      "ag": {
+        "km": 115.5714,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 949,
+        "fraccion_evaluada_pct": 2.353670634920635
+      },
+      "hibrido": {
+        "km": 115.5714,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 1184,
+        "fraccion_evaluada_pct": 2.9365079365079363
+      },
+      "ids": [
+        "CH-984",
+        "CH-998",
+        "CH-1009",
+        "CH-994",
+        "CH-985",
+        "CH-1007",
+        "CH-997",
+        "CH-999"
+      ]
+    },
+    {
+      "instancia": "aleatoria_8_8",
+      "mercados": 8,
+      "ordenes_posibles": 40320,
+      "optimo_km": 119.3624,
+      "tiempo_enumeracion_s": 0.53,
+      "ag": {
+        "km": 119.49169999999998,
+        "brecha_pct": 0.10832556986118608,
+        "evaluaciones_distintas": 875,
+        "fraccion_evaluada_pct": 2.170138888888889
+      },
+      "hibrido": {
+        "km": 119.3624,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 2049,
+        "fraccion_evaluada_pct": 5.081845238095238
+      },
+      "ids": [
+        "CH-987",
+        "CH-999",
+        "CH-1003",
+        "CH-985",
+        "CH-997",
+        "CH-1007",
+        "CH-994",
+        "CH-998"
+      ]
+    },
+    {
+      "instancia": "aleatoria_8_9",
+      "mercados": 8,
+      "ordenes_posibles": 40320,
+      "optimo_km": 172.0762,
+      "tiempo_enumeracion_s": 0.67,
+      "ag": {
+        "km": 172.0762,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 775,
+        "fraccion_evaluada_pct": 1.9221230158730158
+      },
+      "hibrido": {
+        "km": 172.0762,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 1168,
+        "fraccion_evaluada_pct": 2.8968253968253967
+      },
+      "ids": [
+        "CH-1007",
+        "CH-1003",
+        "CH-1010",
+        "CH-987",
+        "CH-999",
+        "CH-985",
+        "CH-984",
+        "CH-1006"
+      ]
+    },
+    {
+      "instancia": "aleatoria_8_10",
+      "mercados": 8,
+      "ordenes_posibles": 40320,
+      "optimo_km": 224.15879999999999,
+      "tiempo_enumeracion_s": 0.61,
+      "ag": {
+        "km": 224.23299999999998,
+        "brecha_pct": 0.033101533377223,
+        "evaluaciones_distintas": 603,
+        "fraccion_evaluada_pct": 1.4955357142857142
+      },
+      "hibrido": {
+        "km": 224.15879999999999,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 1484,
+        "fraccion_evaluada_pct": 3.6805555555555554
+      },
+      "ids": [
+        "CH-999",
+        "CH-990",
+        "CH-994",
+        "CH-991",
+        "CH-1006",
+        "CH-1003",
+        "CH-997",
+        "CH-1007"
+      ]
+    },
+    {
+      "instancia": "aleatoria_8_11",
+      "mercados": 8,
+      "ordenes_posibles": 40320,
+      "optimo_km": 113.48689999999999,
+      "tiempo_enumeracion_s": 0.56,
+      "ag": {
+        "km": 113.48689999999999,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 681,
+        "fraccion_evaluada_pct": 1.6889880952380953
+      },
+      "hibrido": {
+        "km": 113.48689999999999,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 1171,
+        "fraccion_evaluada_pct": 2.904265873015873
+      },
+      "ids": [
+        "CH-985",
+        "CH-991",
+        "CH-987",
+        "CH-990",
+        "CH-997",
+        "CH-994",
+        "CH-999",
+        "CH-1010"
+      ]
+    },
+    {
+      "instancia": "aleatoria_8_12",
+      "mercados": 8,
+      "ordenes_posibles": 40320,
+      "optimo_km": 65.46640000000001,
+      "tiempo_enumeracion_s": 0.62,
+      "ag": {
+        "km": 65.46640000000001,
+        "brecha_pct": 1.1114033480049958e-14,
+        "evaluaciones_distintas": 653,
+        "fraccion_evaluada_pct": 1.6195436507936507
+      },
+      "hibrido": {
+        "km": 65.46640000000001,
+        "brecha_pct": 1.1114033480049958e-14,
+        "evaluaciones_distintas": 1281,
+        "fraccion_evaluada_pct": 3.1770833333333335
+      },
+      "ids": [
+        "CH-1003",
+        "CH-1007",
+        "CH-1011",
+        "CH-1010",
+        "CH-987",
+        "CH-994",
+        "CH-985",
+        "CH-984"
+      ]
+    },
+    {
+      "instancia": "aleatoria_8_13",
+      "mercados": 8,
+      "ordenes_posibles": 40320,
+      "optimo_km": 223.91559999999998,
+      "tiempo_enumeracion_s": 0.67,
+      "ag": {
+        "km": 223.91559999999998,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 717,
+        "fraccion_evaluada_pct": 1.7782738095238095
+      },
+      "hibrido": {
+        "km": 223.91559999999998,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 1212,
+        "fraccion_evaluada_pct": 3.005952380952381
+      },
+      "ids": [
+        "CH-1007",
+        "CH-990",
+        "CH-1010",
+        "CH-994",
+        "CH-1006",
+        "CH-1011",
+        "CH-991",
+        "CH-985"
+      ]
+    },
+    {
+      "instancia": "aleatoria_8_14",
+      "mercados": 8,
+      "ordenes_posibles": 40320,
+      "optimo_km": 116.61139999999999,
+      "tiempo_enumeracion_s": 0.65,
+      "ag": {
+        "km": 116.61139999999999,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 702,
+        "fraccion_evaluada_pct": 1.7410714285714286
+      },
+      "hibrido": {
+        "km": 116.61139999999999,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 969,
+        "fraccion_evaluada_pct": 2.4032738095238093
+      },
+      "ids": [
+        "CH-994",
+        "CH-1003",
+        "CH-985",
+        "CH-1009",
+        "CH-990",
+        "CH-1010",
+        "CH-987",
+        "CH-984"
+      ]
+    },
+    {
+      "instancia": "aleatoria_8_15",
+      "mercados": 8,
+      "ordenes_posibles": 40320,
+      "optimo_km": 170.67059999999998,
+      "tiempo_enumeracion_s": 0.6,
+      "ag": {
+        "km": 170.67059999999998,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 633,
+        "fraccion_evaluada_pct": 1.5699404761904763
+      },
+      "hibrido": {
+        "km": 170.67059999999998,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 1128,
+        "fraccion_evaluada_pct": 2.7976190476190474
+      },
+      "ids": [
+        "CH-1003",
+        "CH-994",
+        "CH-985",
+        "CH-1007",
+        "CH-987",
+        "CH-1006",
+        "CH-1010",
+        "CH-1009"
+      ]
+    },
+    {
+      "instancia": "aleatoria_8_16",
+      "mercados": 8,
+      "ordenes_posibles": 40320,
+      "optimo_km": 119.05129999999998,
+      "tiempo_enumeracion_s": 0.59,
+      "ag": {
+        "km": 119.05129999999998,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 1002,
+        "fraccion_evaluada_pct": 2.4851190476190474
+      },
+      "hibrido": {
+        "km": 119.05129999999998,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 1913,
+        "fraccion_evaluada_pct": 4.744543650793651
+      },
+      "ids": [
+        "CH-985",
+        "CH-994",
+        "CH-997",
+        "CH-987",
+        "CH-1003",
+        "CH-1010",
+        "CH-998",
+        "CH-991"
+      ]
+    },
+    {
+      "instancia": "aleatoria_8_17",
+      "mercados": 8,
+      "ordenes_posibles": 40320,
+      "optimo_km": 116.489,
+      "tiempo_enumeracion_s": 0.48,
+      "ag": {
+        "km": 116.8597,
+        "brecha_pct": 0.3182274721218287,
+        "evaluaciones_distintas": 950,
+        "fraccion_evaluada_pct": 2.3561507936507935
+      },
+      "hibrido": {
+        "km": 116.489,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 1070,
+        "fraccion_evaluada_pct": 2.6537698412698414
+      },
+      "ids": [
+        "CH-1007",
+        "CH-984",
+        "CH-998",
+        "CH-985",
+        "CH-997",
+        "CH-1010",
+        "CH-994",
+        "CH-1009"
+      ]
+    },
+    {
+      "instancia": "aleatoria_8_18",
+      "mercados": 8,
+      "ordenes_posibles": 40320,
+      "optimo_km": 221.26739999999995,
+      "tiempo_enumeracion_s": 0.66,
+      "ag": {
+        "km": 222.61440000000002,
+        "brecha_pct": 0.6087656835123739,
+        "evaluaciones_distintas": 635,
+        "fraccion_evaluada_pct": 1.5749007936507937
+      },
+      "hibrido": {
+        "km": 221.26739999999995,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 1981,
+        "fraccion_evaluada_pct": 4.913194444444445
+      },
+      "ids": [
+        "CH-997",
+        "CH-990",
+        "CH-998",
+        "CH-1007",
+        "CH-991",
+        "CH-985",
+        "CH-1006",
+        "CH-987"
+      ]
+    },
+    {
+      "instancia": "aleatoria_8_19",
+      "mercados": 8,
+      "ordenes_posibles": 40320,
+      "optimo_km": 225.18749999999997,
+      "tiempo_enumeracion_s": 0.61,
+      "ag": {
+        "km": 225.18749999999997,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 1042,
+        "fraccion_evaluada_pct": 2.5843253968253967
+      },
+      "hibrido": {
+        "km": 225.18749999999997,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 1537,
+        "fraccion_evaluada_pct": 3.8120039682539684
+      },
+      "ids": [
+        "CH-1006",
+        "CH-985",
+        "CH-999",
+        "CH-1003",
+        "CH-997",
+        "CH-994",
+        "CH-990",
+        "CH-998"
+      ]
+    },
+    {
+      "instancia": "aleatoria_8_20",
+      "mercados": 8,
+      "ordenes_posibles": 40320,
+      "optimo_km": 225.00400000000002,
+      "tiempo_enumeracion_s": 0.72,
+      "ag": {
+        "km": 225.00400000000002,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 677,
+        "fraccion_evaluada_pct": 1.6790674603174602
+      },
+      "hibrido": {
+        "km": 225.00400000000002,
+        "brecha_pct": 0.0,
+        "evaluaciones_distintas": 1114,
+        "fraccion_evaluada_pct": 2.7628968253968256
+      },
+      "ids": [
+        "CH-997",
+        "CH-999",
+        "CH-1006",
+        "CH-1003",
+        "CH-1010",
+        "CH-1009",
+        "CH-991",
+        "CH-994"
+      ]
+    }
+  ]
+}
